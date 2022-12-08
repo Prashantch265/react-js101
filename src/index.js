@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/**
+ * Same as server.js or index.js in express.
+ * This is where our app get served.
+ * Here we register redux and other things like we register reflect-metadata like things in nestjs or expressjs. 
+ */
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

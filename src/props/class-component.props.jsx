@@ -1,4 +1,5 @@
 import React from "react";
+import FunctionComponentProps from "./function-component.props";
 
 export default class ClassComponentProps extends React.Component{
     /**
@@ -11,6 +12,18 @@ export default class ClassComponentProps extends React.Component{
         super();
         console.log(this.props); // undefined
         console.log(props); // defined
+
+        this.state = {
+            count: 0
+        };
+
+        //we need to register our onClickHandlder as our function component is child of class component and takes method and state from class component
+        this.onClickHandler = this.onClickHandler.bind(this);
+    }
+
+    onClickHandler(){
+        //setState takes an object as an argument
+        this.setState({count: this.state.count + 1});
     }
 
     render(){
@@ -20,6 +33,8 @@ export default class ClassComponentProps extends React.Component{
                 My name is {this.props.name}.
                 <h3>Passed Props</h3>
                 My favorite color is {this.props.color}.
+                <h3>This is a Function Component that takes method and state from this component as a Props</h3>
+                <FunctionComponentProps method={this.onClickHandler} count={this.state.count}/>
             </div>
         );
     }

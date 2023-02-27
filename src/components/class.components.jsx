@@ -23,7 +23,7 @@ export default class ClassComponent extends React.Component {
                 <br/>
                 Here's the list that is printed out with the data stored on our component's state.
                 <ul>
-                { this.state.arr.map(item => <li>{item}</li>) }
+                { this.state.arr.map((item, index) => <li id={index}>{item}</li>) }
                 </ul>
                 <br/>
                 Here's the argument that is passed to this component =&gt; {this.props.attribute}.

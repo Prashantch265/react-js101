@@ -8,6 +8,7 @@ export default class ClassComponentState extends React.Component {
             initialState: "this is initial state of this component."
         }
 
+        //need to register/bind our method
         this.changeState = this.changeState.bind(this);
     }
 

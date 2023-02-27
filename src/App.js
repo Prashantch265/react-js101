@@ -1,6 +1,10 @@
+import ComponentApi from './component-api/class.component-api';
+import ComponentLifeCycle from './component-lifecycle/component-lifecycle';
 import ClassComponent from './components/class.components';
 import FunctionalComponent from './components/function.components';
 import ClassComponentProps from './props/class-component.props';
+import PropsValidation from './props/validation.props';
+import { ExampleUseState } from './react-hooks/react-hooks';
 import ClassComponentState from './states/class-component.state';
 import FunctionComponentState from './states/function-component.state';
 
@@ -22,7 +26,14 @@ function App() {
       <FunctionComponentState />
       <h1>Props in Class Component</h1>
       <ClassComponentProps color="black" />
-      <h1>Props in Function Component</h1>
+      <h1>Props Validation</h1>
+      <PropsValidation name={'Prashant'} age={21} />
+      <h1>React Component API</h1>
+      <ComponentApi />
+      <h1>Component Lifecycle</h1>
+      <ComponentLifeCycle/>
+      <h1>React Hooks</h1>
+      <ExampleUseState/>
     </div>
   );
 }

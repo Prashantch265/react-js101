@@ -3,7 +3,8 @@ import React from "react";
 export default class ComponentLifeCycle extends React.Component {
   constructor(props) {
     super();
-    this.state = {};
+    this.state = {name: '', hello: "World"};  
+    this.changeState = this.changeState.bind(this)  
   }
 
   /**
@@ -37,6 +38,10 @@ export default class ComponentLifeCycle extends React.Component {
         <button onClick={this.changeState}>Click Here!</button>
       </div>
     );
+  }
+
+  changeState(){
+    this.setState({hello:"All!!- Its a great reactjs tutorial."});  
   }
 
   /**

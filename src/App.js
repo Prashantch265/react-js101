@@ -2,6 +2,10 @@ import ComponentApi from './component-api/class.component-api';
 import ComponentLifeCycle from './component-lifecycle/component-lifecycle';
 import ClassComponent from './components/class.components';
 import FunctionalComponent from './components/function.components';
+import { ControlledFromClassExample } from './forms/class-controlled.forms';
+import { UncontrolledFromClassExaple } from './forms/class-uncontrolled.forms';
+import ControlledFromFunctionExample from './forms/function-controlled.forms';
+import UncontrolledFromFunctionExample from './forms/function-uncontrolled.forms';
 import ClassComponentProps from './props/class-component.props';
 import PropsValidation from './props/validation.props';
 import { ExampleUseState } from './react-hooks/react-hooks';
@@ -34,6 +38,15 @@ function App() {
       <ComponentLifeCycle/>
       <h1>React Hooks</h1>
       <ExampleUseState/>
+      <h1>React Forms</h1>
+      <h2>Uncontrolled Form Class Example</h2>
+      <UncontrolledFromClassExaple/>
+      <h2>Uncontrolled From Function Exaple</h2>
+      <UncontrolledFromFunctionExample/>
+      <h2>Controlled Form Class Example</h2>
+      <ControlledFromClassExample/>
+      <h2>Controlled Form Function Example</h2>
+      <ControlledFromFunctionExample/>
     </div>
   );
 }

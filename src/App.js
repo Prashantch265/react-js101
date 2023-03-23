@@ -9,6 +9,7 @@ import UncontrolledFromFunctionExample from './forms/function-uncontrolled.forms
 import ClassComponentProps from './props/class-component.props';
 import PropsValidation from './props/validation.props';
 import { ExampleUseState } from './react-hooks/react-hooks';
+import ReactKeysClassExample from './react-keys/class.react-keys';
 import ClassComponentState from './states/class-component.state';
 import FunctionComponentState from './states/function-component.state';
 
@@ -47,6 +48,8 @@ function App() {
       <ControlledFromClassExample/>
       <h2>Controlled Form Function Example</h2>
       <ControlledFromFunctionExample/>
+      <h1>React Keys</h1>
+      <ReactKeysClassExample/>
     </div>
   );
 }

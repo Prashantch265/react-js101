@@ -28,6 +28,8 @@ export class ControlledFromClassExample extends React.Component {
 
     render(){
         return(
+            // React.Fragment is a component that does not render anything
+            // short form of <React.Fragment></React.Fragment> is <></>
             <>
             <form>
                 <input type="text" name="userName" value={this.state.userName} onChange={this.handleChange}></input>
